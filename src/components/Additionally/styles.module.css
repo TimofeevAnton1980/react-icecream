@@ -1,0 +1,29 @@
+.root {
+  font-family: "roboto", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+.button {
+  font-size: 0.8rem;
+  color: #c50067;
+  text-decoration: underline;
+  border: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+  padding: 0.5em;
+  text-align: center;
+}
+.group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+/*.group > * {*/
+/*    flex-basis: content;*/
+/*}*/
+.title {
+  color: #5a5a5a;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 15px;
+}

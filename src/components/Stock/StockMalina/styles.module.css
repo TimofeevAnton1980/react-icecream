@@ -1,0 +1,40 @@
+.rootMalina {
+    background: url(../imgs/raspberries.jpg) center center no-repeat;
+    height: 228px;
+    flex-basis: 560px;
+    border-radius: 15px;
+    color: #fff;
+    margin: 20px auto;
+    padding: 26px;
+    box-sizing: border-box;
+}
+.title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0;
+}
+.text {
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 12px 0;
+}
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+.button {
+    flex-basis: content;
+}
+@media screen and (max-width: 500px) {
+    .root {
+        padding: 18px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .text {
+        font-size: 1rem;
+    }
+}

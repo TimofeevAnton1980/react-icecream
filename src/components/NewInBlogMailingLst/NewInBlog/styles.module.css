@@ -1,0 +1,39 @@
+.root {
+    background: url(../imgs/pasberries.jpg) center center no-repeat;
+    height: 228px;
+    flex-basis: 560px;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 26px;
+    box-sizing: border-box;
+}
+.title {
+    color: #323232;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+.text {
+    font-size: 1.1rem;
+    text-align: left;
+}
+.href {
+    font-size: 1.2rem;
+    color: #c50067;
+}
+.ul > li:not(:last-child) {
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 500px) {
+    .root {
+        padding: 18px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .text {
+        font-size: 1rem;
+    }
+}

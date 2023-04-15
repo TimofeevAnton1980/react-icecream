@@ -1,0 +1,39 @@
+.container {
+    padding-top: 45px;
+    font-family: "Roboto", "Helvetica", sans-serif;
+    color: #1f1c1c;
+}
+.date {
+    color: #999;
+    padding: 8px 0 8px;
+
+}
+.content {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 12px;
+    margin: auto;
+    background: #f5e9d1;
+    padding: 30px 26px;
+}
+.text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 22px;
+}
+.text_bold {
+    font-weight: bold;
+}
+.gallery {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.button {
+    max-width: 300px;
+}
+.title {
+    color: #c50067;
+}

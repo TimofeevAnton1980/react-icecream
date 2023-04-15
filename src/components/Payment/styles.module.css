@@ -1,0 +1,29 @@
+/*.payment {*/
+/*    background-image: url(../../images/bg-03.jpg);*/
+/*}*/
+.wrapper {
+    padding-top: 40px;
+    border-radius: 15px;
+}
+.content {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #fdfbea;
+    padding: 30px;
+    /*height: 450px;*/
+    color: #121212;
+}
+.title {
+    text-align: center;
+}
+.content .text {
+    margin-top: 20px;
+}
+.content .text:not(:last-child) {
+    margin-bottom: 20px;
+}
+.accordion span {
+    color: #1c94c4;
+}

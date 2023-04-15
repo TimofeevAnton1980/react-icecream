@@ -1,0 +1,12 @@
+.TheForm {
+    font-family: 'roboto', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    padding-top: 40px;
+}
+.TheForm h4 {
+    font-size: 1.15rem;
+    padding: 0 0 20px 0;
+}
+.TheForm__button {
+    width: 100%;
+    max-width: 130px;
+}

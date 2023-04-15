@@ -1,0 +1,17 @@
+.root {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+    .root {
+        column-gap: 70px;
+    }
+}
+/*@media screen and (max-width: 800px) {*/
+/*    .root {*/
+/*        column-gap: 22px;*/
+/*    }*/
+/*}*/

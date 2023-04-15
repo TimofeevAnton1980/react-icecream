@@ -1,0 +1,45 @@
+.root {
+    font-family: 'roboto', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    height: 180px;
+    flex-basis: 300px;
+}
+.button {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 10px;
+}
+.group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10% 15%;
+}
+/*.group > * {*/
+/*    flex-basis: content;*/
+/*}*/
+.title {
+    color: #5a5a5a;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.fa_elem {
+    color: #121212;
+    flex-basis: 100%;
+    order: 1;
+    padding-right: 10px;
+    font-size: 1.1rem;
+    border-right: 1px solid rgba(50, 50, 50, 0.5);
+}
+.element_1 {
+    flex: 1 1 0;
+    order: 2;
+    opacity: 0.5;
+    padding-left: 10px;
+}
+.element_2 {
+    flex: 1 1 0;
+    order: 3;
+    font-weight: 700;
+    padding-left: 10px;
+}

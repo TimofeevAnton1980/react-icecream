@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Крем-брюле и пломбир\nс малиновым джемом",
+    "color": "http://localhost:3000/static/media/ic-slide1_my.cb53606671af628df7d9.png"
+  },
+  {
+    "title": "Slide 2",
+    "color": "require('./slider-imgs/ic-slide2_my.png')"
+  },
+  {
+    "title": "Slide 3",
+    "color": "#d5a29c"
+  },
+  {
+    "title": "Slide 4",
+    "color": "#82a7a6"
+  },
+  {
+    "title": "Slide 5",
+    "color": "#e6af7a"
+  },
+  {
+    "title": "Slide 6",
+    "color": "#95be9e"
+  },
+  {
+    "title": "Slide 7",
+    "color": "#97b5c5"
+  }
+]

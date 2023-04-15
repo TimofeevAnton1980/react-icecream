@@ -1,0 +1,78 @@
+/* Стилизация кнопки */
+
+.button {
+    font-family: 'roboto', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out, background 200ms ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.button__small {
+    font-size: 1rem;
+    padding: 0.3em;
+}
+.button__large {
+    font-size: 1.4rem;
+    padding: 0.6em;
+}
+.button_primary {
+    background: #d13b7b;
+    border: 1px solid #d13b7b;
+}
+.button_primary:hover {
+    background: #9b2457;
+    border-color: #9b2457;
+}
+.button_primary:disabled,
+.button_secondary:disabled,
+.button_alternate:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.button_primary:active,
+.button_primary:focus,
+.button_secondary:active,
+.button_secondary:focus {
+    background: #9b2457;
+    /*box-shadow: 0 0 0 5px #4b122a;*/
+    border-color: #9b2457;
+}
+.button_secondary {
+    background: none;
+    border: 2px solid #c50067;
+    color: #6a193b;
+}
+.button_secondary:hover {
+    background: none;
+    border-color: #6a193b;
+}
+.button_alternate {
+    border: 2px solid transparent;
+    background-color: #ffffff;
+    color: #c50067;
+}
+.button_alternate:hover {
+    border: 2px solid transparent;
+}
+.button_alternate:active,
+.button_alternate:focus {
+    /*border-color: var(--alternate-border);*/
+    /*box-shadow: 0 0 0 5px var(--blue-4);*/
+}
+.button_none {
+    border: none;
+    background-color: inherit;
+    color: #6a193b;
+}
+@media screen and (max-width: 400px) {
+    .button {
+        font-size: 1rem;
+    }
+}

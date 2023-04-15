@@ -1,0 +1,25 @@
+.TheFormModal {
+    font-family: 'roboto', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    /*padding-top: 40px;*/
+    padding: 20px 27px 32px;
+    background-color: #2d2c25;
+}
+.TheFormModal h4 {
+    font-size: 1.15rem;
+    padding: 0 0 20px 0;
+    color: #fff;
+    font-style: italic;
+}
+.TheFormModal__button {
+    width: 100%;
+    max-width: 130px;
+}
+.TheFormModal__total {
+    font-family: "Roboto", "Helvetica", sans-serif;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.2;
+    color: #ecd41a;
+    margin-right: 20px;
+
+}

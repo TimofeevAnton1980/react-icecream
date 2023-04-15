@@ -1,0 +1,11 @@
+.contentWrapper {
+  padding-top: 45px;
+  box-sizing: border-box;
+  display: flex;
+}
+.content {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin: auto;
+}

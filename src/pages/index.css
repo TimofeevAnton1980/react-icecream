@@ -1,0 +1,30 @@
+@import "../fonts/fonts.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+html {
+  font-size: 17px;
+  font-family: "Roboto", "Helvetica", sans-serif;
+  height: 100%;
+  min-width: 320px;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: auto;
+  background: #849d8f url(../images/bg-05.jpg) no-repeat fixed;
+  background-size: cover;
+  position: relative;
+}

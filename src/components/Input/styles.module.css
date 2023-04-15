@@ -1,0 +1,104 @@
+/* стилизация поля ввода */
+.input {
+    font-family: 'roboto', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    /*height: 56px;*/
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #dde2e5;
+    background-color: #ffffff;
+    color: #495057;
+    display: block;
+    box-sizing: border-box;
+    padding-top: 17px;
+    padding-left: 24px;
+    padding-bottom: 13px;
+    outline: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.input:focus {
+    /*outline: none;*/
+}
+.input__label {
+    display: block;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 18px;
+    color: #acb5bd;
+    margin-bottom: 5px;
+}
+.input_valid:focus {
+    border: 1px solid #374fc7;
+}
+.input_invalid {
+    border: 1px solid #f03d3e;
+}
+.input_invalid:focus {
+    border: 1px solid #f03d3e;
+    box-shadow: 0 0 0 5px rgba(220, 53, 69, 0.25);
+}
+.input_success {
+    border: 1px solid #374fc7;
+}
+.input_success:focus {
+    border: 1px solid #374fc7;
+    box-shadow: 0 0 0 5px rgba(13, 110, 253, 0.25);
+}
+.input__icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 100%;
+    transform: translate(-40px, -40px);
+    border: none;
+}
+.input__icon_error {
+    color: #f03d3e;
+    display: block;
+}
+.input__icon_success {
+    color: #374fc7;
+    display: block;
+}
+
+.input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    font-family: 'roboto', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    /*color: var(--grey-4);*/
+}
+.input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-family: 'roboto', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    /*color: var(--grey-4);*/
+}
+.input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-family: 'roboto', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    /*color: var(--grey-4);*/
+}
+.input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    font-family: 'roboto', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    /*color: var(--grey-4);*/
+}
+.input::-moz-placeholder {
+    opacity: 1;
+}
+.input::-webkit-input-placeholder {
+    opacity: 1;
+}
+@media screen and (max-width: 400px) {
+    .input {
+        padding-left: 10px;
+    }
+}

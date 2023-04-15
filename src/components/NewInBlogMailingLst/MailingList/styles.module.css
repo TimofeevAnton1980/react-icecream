@@ -1,0 +1,45 @@
+.root {
+    background: url(../imgs/pattern-post.png) repeat;
+    height: 228px;
+    flex-basis: 560px;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 7px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 400px) {
+    .root {
+        height: 280px;
+    }
+}
+.content {
+    box-sizing: border-box;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 26px;
+    border-radius: 15px;
+}
+.title {
+    color: #323232;
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0 0 15px 0;
+}
+.text {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.inputWrapper {
+    flex-basis: 300px;
+}
+.buttonWrapper {
+    flex-basis: 120px;
+    display: flex;
+}

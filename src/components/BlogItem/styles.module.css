@@ -1,0 +1,62 @@
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    background-color: #fdfbea;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    border-bottom: 2px  solid #d0cfcf;
+    font-family: "roboto", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+.main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding: 10px 0 5px 0;
+}
+/*@media screen and (max-width: 600px) {*/
+/*    .item {*/
+/*        flex-flow: column nowrap;*/
+/*    }*/
+/*}*/
+.item > * {
+    box-sizing: border-box;
+}
+.title > * {
+    color: #c50067;
+}
+.img {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 0;
+    padding: 5px;
+}
+/*@media screen and (max-width: 900px) {*/
+/*    .title > a  {*/
+/*        font-size: 1rem;*/
+/*    }*/
+/*}*/
+.link {
+    border: none;
+    background-color: inherit;
+    color: #c50067;
+    padding: 0 5px 5px 14px;
+    background-image: url(../../images/jc_blog.gif);
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+}
+.dateWrap {
+    padding: 8px 0 8px;
+}
+.dateWrap > *{
+    color: #999;
+}
