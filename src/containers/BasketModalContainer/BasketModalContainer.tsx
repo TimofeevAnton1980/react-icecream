@@ -6,7 +6,7 @@ import { selectProductIdsFromBasket } from '../../store/basket/selectors';
 interface BasketModalContainerInterface {
     available: boolean;
     remove: (f: boolean) => void;
-    productId?: string;
+    productId: string | null;
 }
 export const BasketModalContainer = ({
     available,

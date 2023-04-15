@@ -7,9 +7,14 @@ interface BasketInterface {
     state?: string;
     productCount?: number | false;
     productPrice: number;
-    productId?: string
+    productId: string | null;
 }
-const Basket = ({ state, productCount, productPrice, productId }: BasketInterface) => {
+const Basket = ({
+    state,
+    productCount,
+    productPrice,
+    productId,
+}: BasketInterface) => {
     const ref = useRef<HTMLDivElement>(null);
     const [open, setOpen] = React.useState(false);
     const add = (f: boolean) => setOpen(f);
@@ -40,7 +45,11 @@ const Basket = ({ state, productCount, productPrice, productId }: BasketInterfac
                     </span>
                 </div>
             </div>
-            <BasketModalContainer  available={open} remove={add} productId={productId}/>
+            <BasketModalContainer
+                available={open}
+                remove={add}
+                productId={productId}
+            />
         </div>
     );
 };
