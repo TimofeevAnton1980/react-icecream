@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState } from 'react';
 
 interface BasketProviderInterface {
     children: React.ReactNode;
@@ -14,7 +14,7 @@ export const ClickContext = createContext<ClickContextInterface>({
 });
 
 export const BasketProvider = ({ children }: BasketProviderInterface) => {
-    const [click, setClick] = useState(localStorage.getItem('counter') || '');
+    const [click, setClick] = useState(localStorage?.getItem('counter') || '');
     return (
         <ClickContext.Provider value={{ click, setClick }}>
             {children}

@@ -25,4 +25,5 @@ const PromotionPage = ({ location }: Interface) => {
 export const Head: HeadFC = () => (
     <Seo title="Promotion" description="Акция" />
 );
+
 export default PromotionPage;
