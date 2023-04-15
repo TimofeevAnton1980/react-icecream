@@ -7,11 +7,6 @@
     padding: 7px;
     box-sizing: border-box;
 }
-@media screen and (max-width: 400px) {
-    .root {
-        height: 280px;
-    }
-}
 .content {
     box-sizing: border-box;
     background: #ffffff;
@@ -42,4 +37,12 @@
 .buttonWrapper {
     flex-basis: 120px;
     display: flex;
+}
+@media screen and (max-width: 420px) {
+    /*.root {*/
+    /*    height: 280px;*/
+    /*}*/
+    .content {
+        padding: 14px;
+    }
 }
