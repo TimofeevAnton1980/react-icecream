@@ -56,7 +56,7 @@ const Layout: React.FC<LayoutInterface> = ({ children, mode, inProp }) => {
                 document.body.style.backgroundImage = `url('${arrayImagesBg.bg5}')`;
                 break;
         }
-        console.log(mode);
+        // console.log(mode);
     }, [mode]);
 
     return (
