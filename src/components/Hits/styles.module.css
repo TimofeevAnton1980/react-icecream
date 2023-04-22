@@ -3,7 +3,7 @@
     flex-flow: row wrap;
     justify-content: center;
     box-sizing: border-box;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 @media screen and (max-width: 1200px) {
     .root {

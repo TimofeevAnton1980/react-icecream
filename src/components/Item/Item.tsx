@@ -4,7 +4,7 @@ import { Button } from '../Button/Button';
 import classnames from 'classnames';
 import * as css from '../Button/styles.module.css';
 import { arrayImages } from '../constants/imgsIceCream';
-import { imgSize, widthWindow } from '../constants/heigh-width';
+import { imgSize } from '../constants/heigh-width';
 import { Rating } from '../Rating/Rating';
 import { Product } from '../../store/products';
 
@@ -31,7 +31,7 @@ export const Item: React.FC<ItemInterface> = ({
     style,
     onAdd = (f) => f,
     product,
-                                                  productPricePromotion
+    productPricePromotion,
 }) => {
     const iceImg = arrayImages[productImg];
     const newPrice = productPrice - 30;
@@ -46,7 +46,24 @@ export const Item: React.FC<ItemInterface> = ({
             />
             <Rating value={product.rating} />
             <div className={styles.name}>{productName}</div>
-            <div className={styles.price}>{productPricePromotion ? <span><span style={{textDecoration: 'line-through', color: 'red'}}>{productPrice}₽/кг</span>&nbsp;{newPrice}</span> : productPrice}₽/кг</div>
+            <div className={styles.price}>
+                {productPricePromotion ? (
+                    <span>
+                        <span
+                            style={{
+                                textDecoration: 'line-through',
+                                color: 'red',
+                            }}
+                        >
+                            {productPrice}₽/кг
+                        </span>
+                        &nbsp;{newPrice}
+                    </span>
+                ) : (
+                    productPrice
+                )}
+                ₽/кг
+            </div>
             <div className={styles.containerButton}>
                 <div className={styles.actions}>
                     <button

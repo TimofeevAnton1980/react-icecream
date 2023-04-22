@@ -1,11 +1,11 @@
 .root {
     background: url(../imgs/pattern-post.png) repeat;
-    height: 228px;
-    flex-basis: 560px;
     border-radius: 15px;
-    margin: 20px auto;
     padding: 7px;
     box-sizing: border-box;
+    margin: auto;
+    height: 228px;
+    max-width: 560px;
 }
 .content {
     box-sizing: border-box;
@@ -37,6 +37,11 @@
 .buttonWrapper {
     flex-basis: 120px;
     display: flex;
+}
+@media screen and (max-width: 1024px) {
+    .content {
+        padding: 16px;
+    }
 }
 @media screen and (max-width: 420px) {
     /*.root {*/

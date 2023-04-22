@@ -1,11 +1,15 @@
 .root {
     background: url(../imgs/pasberries.jpg) center center no-repeat;
-    height: 228px;
-    flex-basis: 560px;
+    display: flex;
     border-radius: 15px;
-    margin: 20px auto;
-    padding: 26px;
     box-sizing: border-box;
+    height: 228px;
+    max-width: 560px;
+}
+.content {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 0 26px;
 }
 .title {
     color: #323232;
@@ -24,9 +28,9 @@
 .ul > li:not(:last-child) {
     margin-bottom: 10px;
 }
-@media screen and (max-width: 500px) {
-    .root {
-        padding: 18px;
+@media screen and (max-width: 1024px) {
+    .content {
+        padding: 0 18px;
     }
 }
 @media screen and (max-width: 400px) {

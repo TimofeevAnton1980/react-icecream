@@ -1,17 +1,16 @@
 .container {
     padding-top: 45px;
-    font-family: "Roboto", "Helvetica", sans-serif;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
     color: #1f1c1c;
 }
 .date {
     color: #999;
     padding: 8px 0 8px;
-
 }
 .content {
     display: block;
     box-sizing: border-box;
-    border-radius: 12px;
+    border-radius: 15px;
     margin: auto;
     background: #f5e9d1;
     padding: 30px 26px;
@@ -36,4 +35,9 @@
 }
 .title {
     color: #c50067;
+}
+@media all and (max-width: 767px) {
+    .container {
+        padding-top: 0;
+    }
 }

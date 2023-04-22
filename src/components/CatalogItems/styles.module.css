@@ -1,11 +1,16 @@
 .contentWrapper {
-  padding-top: 45px;
-  box-sizing: border-box;
-  display: flex;
+    padding-top: 45px;
+    box-sizing: border-box;
+    display: flex;
 }
 .content {
-  display: block;
-  box-sizing: border-box;
-  border-radius: 12px;
-  margin: auto;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: auto;
+}
+@media all and (max-width: 767px) {
+    .contentWrapper {
+        padding-top: 0;
+    }
 }

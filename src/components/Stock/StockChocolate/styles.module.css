@@ -1,12 +1,16 @@
-.rootChocolate {
+.contentWrapper {
+    display: flex;
     background: url(../imgs/chocolate.jpg) center center no-repeat;
     height: 228px;
-    flex-basis: 560px;
+    max-width: 560px;
     border-radius: 15px;
     color: #fff;
-    margin: 20px auto;
-    padding: 26px;
+}
+.content {
+    margin: auto;
+    /*padding: 26px;*/
     box-sizing: border-box;
+    padding: 0 26px;
 }
 .title {
     text-align: center;
@@ -25,9 +29,9 @@
 .button {
     flex-basis: content;
 }
-@media screen and (max-width: 500px) {
-    .root {
-        padding: 18px;
+@media screen and (max-width: 1024px) {
+    .content {
+        padding: 0 18px;
     }
 }
 @media screen and (max-width: 400px) {

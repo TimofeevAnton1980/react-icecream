@@ -2,7 +2,7 @@ const isBrowser = typeof window !== 'undefined';
 let heightRender = 150;
 let imgSizeRender = 130;
 let windowSize = 300;
-let windowHeight = 300;
+let windowHeight = 600;
 if (isBrowser) {
     windowSize = window.innerWidth;
     windowHeight = window.innerHeight;
