@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 export const Additionally = () => {
   return (
     <div className={styles.root}>
-      <h2 className={styles.title}>Полезные ссылки:</h2>
+      <h2 className={styles.title}>Дополнительно:</h2>
       <div className={styles.group}>
         <Link to={`/`} title="Для поставщиков" className={styles.button}>
           Для поставщиков
