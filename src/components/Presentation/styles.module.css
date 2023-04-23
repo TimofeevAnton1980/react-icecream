@@ -96,7 +96,7 @@
 @media screen and (max-width: 600px) {
     .content {
         display: flex;
-        flex-flow: row wrap;
-        align-content: flex-start;
+        flex-flow: column wrap;
+        /*align-content: flex-start;*/
     }
 }
