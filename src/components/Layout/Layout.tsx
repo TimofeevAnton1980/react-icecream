@@ -5,6 +5,7 @@ import { Footer } from '../Footer/Footer';
 import { useEffect, useLayoutEffect, useState } from 'react';
 import { arrayImagesBg } from '../constants/imgBg';
 import * as styles from './styles.module.css';
+import { useInnerHeight } from '../../hooks/innerHeight';
 
 interface LayoutInterface {
     children: React.ReactNode;
@@ -58,7 +59,7 @@ const Layout: React.FC<LayoutInterface> = ({ children, mode, inProp }) => {
         }
         // console.log(mode);
     }, [mode]);
-
+    useInnerHeight();
     return (
         // <div className={classNames(`styles.${mode}`)}>
         <div className={styles.wrapper} id={'LayoutWrapper'}>

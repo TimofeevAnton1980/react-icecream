@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { FixedSizeList } from 'react-window';
 import * as styles from './styles.module.css';
 import { CatalogItemsContainer } from '../../containers/CatalogItemsContainer/CatalogItemsContainer';
-import { heightWindow, size, widthWindow } from '../constants/heigh-width';
 import BasketContainer from '../../containers/BasketContainer/BasketContainer';
 import { BasketProvider } from '../../containers/BasketProvider/BasketProvider';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 interface renderRowInterface {
     index: number;
@@ -33,7 +33,7 @@ const CatalogItems: React.FC<CatalogInterface> = ({
         listArray.splice(indexEl, 1);
         listArray.unshift(productIdHit);
     }
-
+    const [size, widthWindow, heightWindow] = useWindowSize();
     const Items = ({ index, style }: renderRowInterface) => (
         <CatalogItemsContainer
             productId={listArray[index]}

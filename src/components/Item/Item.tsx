@@ -4,7 +4,6 @@ import { Button } from '../Button/Button';
 import classnames from 'classnames';
 import * as css from '../Button/styles.module.css';
 import { arrayImages } from '../constants/imgsIceCream';
-import { imgSize } from '../constants/heigh-width';
 import { Rating } from '../Rating/Rating';
 import { Product } from '../../store/products';
 
@@ -35,6 +34,7 @@ export const Item: React.FC<ItemInterface> = ({
 }) => {
     const iceImg = arrayImages[productImg];
     const newPrice = productPrice - 30;
+    const imgSize = 130;
     return (
         <div className={styles.item} style={{ ...style }}>
             <img

@@ -11,7 +11,7 @@ interface Interface {
     location: PageProps['location'];
 }
 
-const Catalog = ({ location }: Interface) => {
+const Catalog2 = ({ location }: Interface) => {
     return (
         <Layout mode={location?.state?.mode}>
             <Provider store={store}>
@@ -28,4 +28,4 @@ const Catalog = ({ location }: Interface) => {
 export const Head: HeadFC = () => (
     <Seo title="Catalog" description="Каталог товаров" />
 );
-export default Catalog;
+export default Catalog2;

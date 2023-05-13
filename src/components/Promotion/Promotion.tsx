@@ -3,12 +3,13 @@ import * as css from './styles.module.css';
 import { CatalogItemsContainer } from '../../containers/CatalogItemsContainer/CatalogItemsContainer';
 import { FixedSizeList } from 'react-window';
 import * as styles from '../CatalogItems/styles.module.css';
-import { size, widthWindow } from '../constants/heigh-width';
+// import { size, widthWindow } from '../constants/heigh-width';
 import { useAppSelector } from '../../hooks/hook_ts';
 import { RootState } from '../../store/store';
 import { selectProductPromotion } from '../../store/products/selectors';
 import { BasketProvider } from '../../containers/BasketProvider/BasketProvider';
 import BasketContainer from '../../containers/BasketContainer/BasketContainer';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
 interface renderRowInterface {
     index: number;
@@ -17,6 +18,7 @@ export const Promotion = () => {
     const listArray = useAppSelector((state: RootState) =>
         selectProductPromotion(state),
     );
+    const [size, widthWindow] = useWindowSize();
 
     const Items = ({ index }: renderRowInterface) => (
         <CatalogItemsContainer

@@ -6,7 +6,7 @@ import { useAppSelector } from '../../hooks/hook_ts';
 import { selectProductIdsFromBasket } from '../../store/basket/selectors';
 
 interface BasketItemInterface {
-    totalPrice: number;
+    totalPrice?: number;
     productCount?: number | false;
 }
 let inProp = false;

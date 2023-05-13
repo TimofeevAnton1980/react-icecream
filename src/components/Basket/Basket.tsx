@@ -6,7 +6,7 @@ import { BasketModalContainer } from '../../containers/BasketModalContainer/Bask
 interface BasketInterface {
     state?: string;
     productCount?: number | false;
-    productPrice: number;
+    productPrice?: number;
     productId: string | null;
 }
 const Basket = ({
@@ -41,7 +41,7 @@ const Basket = ({
                         {productCount}
                     </span>
                     <span className={styles.cartIcon__price}>
-                        ₽{productPrice.toFixed(2)}
+                        ₽{productPrice?.toFixed(2)}
                     </span>
                 </div>
             </div>
