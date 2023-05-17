@@ -45,7 +45,7 @@ export const SideMenu = React.forwardRef<HTMLDivElement, divProps>(
                                 <li>
                                     <Link
                                         to="/catalog1"
-                                        state={{ mode: 'catalog' }}
+                                        state={{ mode: 'catalog1' }}
                                     >
                                         Щербеты
                                     </Link>
@@ -53,7 +53,7 @@ export const SideMenu = React.forwardRef<HTMLDivElement, divProps>(
                                 <li>
                                     <Link
                                         to="/catalog2"
-                                        state={{ mode: 'catalog' }}
+                                        state={{ mode: 'catalog2' }}
                                     >
                                         Фруктовый лед
                                     </Link>
