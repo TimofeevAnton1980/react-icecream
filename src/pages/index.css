@@ -28,5 +28,5 @@ body {
     background-size: cover;
     position: relative;
     min-height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    min-height: calc(var(--vh, 1vh) * 100);
 }

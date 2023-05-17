@@ -47,6 +47,12 @@ const Layout: React.FC<LayoutInterface> = ({ children, mode, inProp }) => {
             case 'catalog':
                 document.body.style.backgroundImage = `url('${arrayImagesBg.bg3}')`;
                 break;
+            case 'catalog1':
+                document.body.style.backgroundImage = `url('${arrayImagesBg.bg4}')`;
+                break;
+            case 'catalog2':
+                document.body.style.backgroundImage = `url('${arrayImagesBg.bg2}')`;
+                break;
             case 'promotion':
                 document.body.style.backgroundImage = `url('${arrayImagesBg.bg4}')`;
                 break;
