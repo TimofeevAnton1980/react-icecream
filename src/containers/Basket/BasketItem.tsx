@@ -33,6 +33,7 @@ export const BasketItem = ({
         local ? localStorage.setItem('counter', '') : null;
     }
     return (
+
         <Transition
             timeout={500}
             in={inProp}

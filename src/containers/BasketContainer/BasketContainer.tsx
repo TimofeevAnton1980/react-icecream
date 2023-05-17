@@ -7,7 +7,7 @@ const BasketContainer = () => {
     const price = useAppSelector((state) => totalPrice(state));
     const count = useAppSelector((state) => productCount(state));
 
-    return <BasketItem productCount={count} totalPrice={price} />;
+    return price ? <BasketItem productCount={count} totalPrice={price} /> : null
 };
 
 export default BasketContainer;

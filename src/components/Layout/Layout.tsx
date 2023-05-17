@@ -68,7 +68,7 @@ const Layout: React.FC<LayoutInterface> = ({ children, mode, inProp }) => {
     useInnerHeight();
     return (
         // <div className={classNames(`styles.${mode}`)}>
-        <div className={styles.wrapper} id={'LayoutWrapper'}>
+        <div className={styles.wrapper}>
             <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
             <main>{children}</main>
             <Footer />
