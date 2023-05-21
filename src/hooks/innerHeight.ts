@@ -18,10 +18,11 @@ import { useWindowSize } from './useWindowSize';
 
 export const useInnerHeight = () => {
     const [, , height] = useWindowSize();
-
-    function setScreen() {
-        const vh = height * 0.01;
-        document?.documentElement.style.setProperty('--vh', `${vh}px`);
+    const isBrowser = typeof document !== 'undefined';
+    if (isBrowser) {
+        (function setScreen() {
+            const vh = height * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        })();
     }
-    setScreen();
 };
