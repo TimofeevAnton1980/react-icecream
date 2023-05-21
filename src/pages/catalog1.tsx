@@ -26,6 +26,6 @@ const Catalog1 = ({ location }: Interface) => {
     );
 };
 export const Head: HeadFC = () => (
-    <Seo title="Catalog" description="Каталог товаров" />
+    <Seo title="Catalog1" description="Каталог товаров" />
 );
 export default Catalog1;

@@ -1,9 +1,5 @@
 import React from 'react';
 import { RootState } from '../store';
-import {
-    useProductWithCount,
-    useProductWithPrice,
-} from '../../hooks/useProductWithCount';
 
 type BasketProps = {
     state: RootState;
