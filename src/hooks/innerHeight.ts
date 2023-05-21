@@ -21,7 +21,7 @@ export const useInnerHeight = () => {
 
     function setScreen() {
         const vh = height * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        document?.documentElement.style.setProperty('--vh', `${vh}px`);
     }
     setScreen();
 };
