@@ -65,7 +65,7 @@ const Layout: React.FC<LayoutInterface> = ({ children, mode, inProp }) => {
         }
         // console.log(mode);
     }, [mode]);
-    // useInnerHeight();
+    useInnerHeight();
     return (
         // <div className={classNames(`styles.${mode}`)}>
         <div className={styles.wrapper}>
