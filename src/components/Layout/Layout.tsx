@@ -36,6 +36,8 @@ const Layout: React.FC<LayoutInterface> = ({ children, mode, inProp }) => {
     // console.log(_mode);
     // const nodeRef = useRef(null);
 
+    useInnerHeight();
+
     useEffect(() => {
         switch (mode) {
             case 'home':
@@ -65,7 +67,7 @@ const Layout: React.FC<LayoutInterface> = ({ children, mode, inProp }) => {
         }
         // console.log(mode);
     }, [mode]);
-    useInnerHeight();
+
     return (
         // <div className={classNames(`styles.${mode}`)}>
         <div className={styles.wrapper}>
