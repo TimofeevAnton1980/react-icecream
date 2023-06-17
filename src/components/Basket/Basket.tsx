@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as styles from './styles.module.css';
 import classnames from 'classnames';
-import { BasketModal } from '../BasketModal/BasketModal';
 import { BasketModalContainer } from '../../containers/BasketModalContainer/BasketModalContainer';
 interface BasketInterface {
     state?: string;
@@ -21,9 +20,9 @@ const Basket = ({
     const [widthLayout, setWidthLayout] = useState('');
     useEffect(() => {
         let container = document.body.querySelector('#LayoutWrapper');
-        let containerLeft = container?.getBoundingClientRect().right || 0;
+        let containerRight = container?.getBoundingClientRect().right || 0;
         const windowInnerWidth = document.documentElement.clientWidth;
-        setWidthLayout(containerLeft - 15 + 'px');
+        setWidthLayout(containerRight - 15 + 'px');
         if (windowInnerWidth <= 767) setWidthLayout('');
         ref.current?.addEventListener('click', () => add(true));
         return () => ref.current?.removeEventListener('click', () => add(true));

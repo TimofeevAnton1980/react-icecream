@@ -36,7 +36,7 @@ const Layout: React.FC<LayoutInterface> = ({ children, mode, inProp }) => {
     // console.log(_mode);
     // const nodeRef = useRef(null);
 
-    useInnerHeight();
+    // useInnerHeight();
 
     useEffect(() => {
         switch (mode) {
@@ -70,7 +70,7 @@ const Layout: React.FC<LayoutInterface> = ({ children, mode, inProp }) => {
 
     return (
         // <div className={classNames(`styles.${mode}`)}>
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} id={'LayoutWrapper'}>
             <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
             <main>{children}</main>
             <Footer />
