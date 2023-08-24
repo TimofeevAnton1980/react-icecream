@@ -19,7 +19,10 @@ export const Promotion = () => {
         selectProductPromotion(state),
     );
     const [size, widthWindow] = useWindowSize();
-
+    let heightBlock = 400;
+    if (widthWindow > 1000 ) {
+        heightBlock = 300;
+    }
     const Items = ({ index }: renderRowInterface) => (
         <CatalogItemsContainer
             productId={listArray[index]}
@@ -47,7 +50,7 @@ export const Promotion = () => {
                 <div className={css.contentWrapper}>
                     <FixedSizeList
                         className={styles.content}
-                        height={400}
+                        height={heightBlock}
                         width={widthWindow - 50}
                         itemCount={listArray.length}
                         itemSize={size}
