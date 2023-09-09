@@ -38,7 +38,7 @@ const PresentSlider = () => {
             <div className={css.container}>
                 <div className={css.swiperContainer}>
                     <h2 className={css.title}>
-                        Магазин Глейси — это онлайн и офлайн магазин по продаже
+                        Магазин ТопАйс — это онлайн и офлайн магазин по продаже
                         мороженого
                         <br />
                         собственного производства на развес
