@@ -70,6 +70,6 @@
         display: none;
     }
     .header {
-        grid-row-gap: 10px;
+        grid-row-gap: 0;
     }
 }

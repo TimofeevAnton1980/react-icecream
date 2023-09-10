@@ -12,6 +12,6 @@
 }
 @media all and (max-width: 800px) {
     .contentWrapper {
-        padding-top: 0;
+        padding-top: 20px;
     }
 }
