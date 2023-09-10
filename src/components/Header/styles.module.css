@@ -69,4 +69,7 @@
     .telefon {
         display: none;
     }
+    .header {
+        grid-row-gap: 10px;
+    }
 }
