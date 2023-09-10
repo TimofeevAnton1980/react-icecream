@@ -9,7 +9,6 @@ import {
 import { Menu } from '../Menu/Menu';
 import { Link } from 'gatsby';
 import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
-// import { widthWindow } from "../constants/heigh-width";
 import { NavState } from '../../containers/NavState/navState';
 import { useWindowSize } from '../../hooks/useWindowSize';
 
@@ -30,7 +29,7 @@ export const Header: React.FC<HeadertInterface> = ({ siteTitle }) => {
     return (
         <NavState>
             <header className={styles.header}>
-                {widthWindow < 765 ? <BurgerMenu /> : null}
+                {widthWindow < 800 ? <BurgerMenu /> : null}
                 <div className={styles.logo}>
                     <Link to="/" className={styles.logo__link}>
                         <div className={styles.logo_img}>&nbsp;</div>
@@ -62,7 +61,7 @@ export const Header: React.FC<HeadertInterface> = ({ siteTitle }) => {
                     </div>
                 </div>
 
-                {widthWindow >= 765 ? <Menu /> : null}
+                {widthWindow >= 800 ? <Menu /> : null}
             </header>
         </NavState>
     );

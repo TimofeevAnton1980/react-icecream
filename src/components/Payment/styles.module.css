@@ -27,7 +27,7 @@
 .accordion span {
     color: #1c94c4;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 800px) {
     .contentWrapper {
         padding-top: 0;
     }

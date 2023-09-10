@@ -1,69 +1,72 @@
 .header {
-  /*display: flex;*/
-  /*flex-flow: row wrap;*/
-  /*justify-content: space-between;*/
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto;
-  grid-template-areas:
-    "logo social"
-    "menu menu";
-  grid-row-gap: 30px;
+    /*display: flex;*/
+    /*flex-flow: row wrap;*/
+    /*justify-content: space-between;*/
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+        'logo social'
+        'menu menu';
+    grid-row-gap: 30px;
 }
 .logo {
-  display: flex;
-  flex-flow: row wrap;
-  grid-area: logo;
+    display: flex;
+    flex-flow: row nowrap;
+    grid-area: logo;
 }
 .logo_img {
-  display: inline-block;
-  float: left;
-  background: url(../../images/logo.svg);
-  width: 153px;
-  height: 90px;
+    display: inline-block;
+    float: left;
+    background: url(../../images/logo.svg);
+    width: 153px;
+    height: 90px;
 }
 .telefon {
-  height: 60px;
-  display: flex;
-  flex-flow: column wrap;
-  font-size: 1.2rem;
-  color: #92004c;
+    height: 60px;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 1.2rem;
+    color: #92004c;
 }
 .fa_phone {
-  color: #813594;
-  flex-basis: 100%;
-  order: 1;
-  padding-right: 10px;
-  padding-top: 5px;
+    color: #813594;
+    flex-basis: 100%;
+    order: 1;
+    padding-right: 10px;
+    padding-top: 5px;
 }
 .telephone_1 {
-  flex: 1 1 0;
-  order: 2;
+    flex: 1 1 0;
+    order: 2;
 }
 .telephone_2 {
-  flex: 1 1 0;
-  order: 3;
+    flex: 1 1 0;
+    order: 3;
 }
 .socialWrap {
-  grid-area: social;
-  justify-self: end;
-  /*margin-left: calc(100% - 95px);*/
+    grid-area: social;
+    justify-self: end;
+    /*margin-left: calc(100% - 95px);*/
 }
 .social {
-  display: flex;
-  flex-flow: row wrap;
-  font-size: 25px;
-  gap: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 25px;
+    gap: 10px;
 }
 .href {
-  color: #813594;
+    color: #813594;
 }
-@media all and (max-width: 767px) {
-  .socialWrap {
-    justify-self: start;
-  }
-  .logo__link {
-    padding-left: 20px;
-  }
+@media all and (max-width: 800px) {
+    .socialWrap {
+        justify-self: start;
+    }
+    .logo__link {
+        padding-left: 20px;
+    }
+    .telefon {
+        display: none;
+    }
 }
