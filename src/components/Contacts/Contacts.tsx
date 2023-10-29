@@ -17,30 +17,38 @@ export const Contacts = () => {
                         <span className={styles.fa_elem}>
                             <BsFillTelephoneFill />
                         </span>
-                        <span className={styles.element_1}>ТЕЛЕФОН</span>
-                        <span className={styles.element_2}>
-                            +1(555)-555-555
-                        </span>
+                        <div className={styles.elements}>
+                            <span className={styles.element_1}>ТЕЛЕФОН</span>
+                            <span className={styles.element_2}>
+                                +1(555)-555-555
+                            </span>
+                        </div>
                     </div>
                     <div className={classnames(styles.group, styles.group_2)}>
                         <span className={styles.fa_elem}>
                             <FaMapMarkerAlt />
                         </span>
-                        <span className={styles.element_1}>ГЛАВНЫЙ ОФИС</span>
-                        <span className={styles.element_2}>
-                            Москва, ул. Демьяна Бедного
-                        </span>
+                        <div className={styles.elements}>
+                            <span className={styles.element_1}>
+                                ГЛАВНЫЙ ОФИС
+                            </span>
+                            <span className={styles.element_2}>
+                                Москва, ул. Демьяна Бедного
+                            </span>
+                        </div>
                     </div>
                     <div className={classnames(styles.group, styles.group_3)}>
                         <span className={styles.fa_elem}>
                             <AiFillMail />
                         </span>
-                        <span className={styles.element_1}>ПОЧТА</span>
-                        <span className={styles.element_2}>
-                            timofeevai1980
-                            <wbr />
-                            @gmail.com
-                        </span>
+                        <div className={styles.elements}>
+                            <span className={styles.element_1}>ПОЧТА</span>
+                            <span className={styles.element_2}>
+                                timofeevai1980
+                                <wbr />
+                                @gmail.com
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
