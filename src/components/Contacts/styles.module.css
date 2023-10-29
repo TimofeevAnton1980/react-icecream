@@ -38,22 +38,22 @@
         sans-serif;
 }
 .group_1 {
-    flex-basis: 170px;
+    max-width: 170px;
 }
 .group_2 {
-    flex-basis: 290px;
+    max-width: 290px;
 }
 .group_3 {
-    flex-basis: 260px;
+    max-width: 260px;
 }
 @media all and (max-width: 390px) {
     .group_2 {
-        flex-basis: 240px;
+        max-width: 240px;
     }
 }
 @media all and (max-width: 350px) {
     .group_3 {
-        flex-basis: 220px;
+        max-width: 220px;
     }
 }
 .fa_elem {
