@@ -7,8 +7,8 @@
     margin: 0;
     box-sizing: border-box;
     padding: 10px;
-    border-bottom: 2px  solid #d0cfcf;
-    font-family: "roboto", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    border-bottom: 2px solid #d0cfcf;
+    font-family: 'roboto', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
 }
 .main {
     display: flex;
@@ -32,6 +32,9 @@
 .title > * {
     color: #c50067;
 }
+.blogText {
+    font-size: 17px;
+}
 .img {
     height: 150px;
     width: 150px;
@@ -40,11 +43,14 @@
     border: 0;
     padding: 5px;
 }
-/*@media screen and (max-width: 900px) {*/
-/*    .title > a  {*/
-/*        font-size: 1rem;*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 380px) {
+    .title {
+        font-size: 1.3em;
+    }
+    .blogText {
+        font-size: 15px;
+    }
+}
 .link {
     border: none;
     background-color: inherit;
@@ -57,6 +63,6 @@
 .dateWrap {
     padding: 8px 0 8px;
 }
-.dateWrap > *{
+.dateWrap > * {
     color: #999;
 }

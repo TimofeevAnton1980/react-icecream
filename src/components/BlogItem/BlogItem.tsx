@@ -50,7 +50,7 @@ export const BlogItem: React.FC<ItemInterface> = ({
                     width={imgSize}
                     height={imgSize}
                 />
-                <div>{blogText}</div>
+                <div className={styles.blogText}>{blogText}</div>
             </div>
             <Link
                 to={`/${blogPage}`}
