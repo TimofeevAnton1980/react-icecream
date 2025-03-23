@@ -15,7 +15,7 @@
     display: flex;
     flex-flow: row nowrap;
     grid-area: logo;
-    justify-self: center;
+    justify-self: left;
 }
 .logo_img {
     display: inline-block;
@@ -73,5 +73,8 @@
         background: no-repeat center/contain url(../../images/logo-min.svg);
         width: 68px;
         height: 44px;
+    }
+    .logo {
+        justify-self: center;
     }
 }
