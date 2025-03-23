@@ -102,7 +102,7 @@
     height: 178px;
   }
   .accordion__item_big[open] {
-    height: 260px;
+    height: 420px;
   }
   .accordion__item_small[open] {
     height: 110px;
@@ -133,9 +133,9 @@
 }
 @media screen and (max-width: 370px) {
   .accordion__item[open] {
-    height: 240px;
+    height: 315px;
   }
   .accordion__item_big[open] {
-    height: 330px;
+    height: 630px;
   }
 }
