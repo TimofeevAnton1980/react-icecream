@@ -15,11 +15,11 @@
     display: flex;
     flex-flow: row nowrap;
     grid-area: logo;
+    justify-self: center;
 }
 .logo_img {
     display: inline-block;
-    float: left;
-    background: url(../../images/logo.svg);
+    background: no-repeat center/contain url(../../images/logo.svg);
     width: 153px;
     height: 90px;
 }
@@ -61,15 +61,17 @@
 }
 @media all and (max-width: 800px) {
     .socialWrap {
-        justify-self: start;
-    }
-    .logo__link {
-        padding-left: 20px;
+        justify-self: center;
     }
     .telefon {
         display: none;
     }
     .header {
         grid-row-gap: 0;
+    }
+    .logo_img {
+        background: no-repeat center/contain url(../../images/logo-min.svg);
+        width: 68px;
+        height: 44px;
     }
 }
